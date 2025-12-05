@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LisRead</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="app-header">
+        <h1>LisRead App</h1>
+        <p class="tagline">Speak and capture your thoughts instantly</p>
+    </header>
+
+    <!-- MAIN PAD -->
+    <section class="pad">
+        <textarea id="speechOutput" placeholder="Your speech will appear here..."></textarea>
+
+        <button id="saveBtn">💾 Save Note</button>
+
+        <!-- MIC BUTTON + LABEL -->
+        <div class="mic-wrapper">
+            <button id="startBtn">🎤</button>
+            <span class="listen-label">Start Listening</span>
+
+            <button id="stopBtn">⛔</button>
+        </div>
+    </section>
+
+    <!-- NOTES SECTION -->
+    <section class="notes-section">
+        <h2>Your Notes</h2>
+        <div id="notesContainer" class="notes-container">
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
